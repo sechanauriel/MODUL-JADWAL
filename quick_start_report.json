@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-01-17T18:38:12.412334",
+  "total_conflicts": 2,
+  "conflicts": [
+    {
+      "conflict_type": "room_conflict",
+      "schedule_1": {
+        "schedule_id": "SCH_RC1",
+        "course_name": "Kalkulus I",
+        "course_code": "MTH101",
+        "lecturer_name": "Dr. Smith",
+        "day": "MONDAY",
+        "time_slot": "08:00-10:00",
+        "room": "Ruang A (Cap: 40)",
+        "num_students": 35,
+        "krs_id": null
+      },
+      "description": "Room 'Ruang A' double-booked: Kalkulus I vs Aljabar",
+      "severity": "critical",
+      "schedule_2": {
+        "schedule_id": "SCH_RC2",
+        "course_name": "Aljabar",
+        "course_code": "MTH102",
+        "lecturer_name": "Prof. Jones",
+        "day": "MONDAY",
+        "time_slot": "09:00-11:00",
+        "room": "Ruang A (Cap: 40)",
+        "num_students": 30,
+        "krs_id": null
+      }
+    },
+    {
+      "conflict_type": "lecturer_conflict",
+      "schedule_1": {
+        "schedule_id": "SCH_LC1",
+        "course_name": "Programming",
+        "course_code": "CS101",
+        "lecturer_name": "Dr. Smith",
+        "day": "WEDNESDAY",
+        "time_slot": "13:00-15:00",
+        "room": "Ruang B (Cap: 50)",
+        "num_students": 28,
+        "krs_id": null
+      },
+      "description": "Lecturer 'Dr. Smith' double-booked: Programming (WEDNESDAY 13:00-15:00) vs Data Structures (WEDNESDAY 14:00-16:00)",
+      "severity": "critical",
+      "schedule_2": {
+        "schedule_id": "SCH_LC2",
+        "course_name": "Data Structures",
+        "course_code": "CS102",
+        "lecturer_name": "Dr. Smith",
+        "day": "WEDNESDAY",
+        "time_slot": "14:00-16:00",
+        "room": "Ruang A (Cap: 40)",
+        "num_students": 25,
+        "krs_id": null
+      }
+    }
+  ],
+  "summary": {
+    "total_conflicts": 2,
+    "by_type": {
+      "room_conflict": 1,
+      "lecturer_conflict": 1
+    },
+    "by_severity": {
+      "critical": 2
+    },
+    "affected_schedules": [
+      "SCH_LC2",
+      "SCH_LC1",
+      "SCH_RC1",
+      "SCH_RC2"
+    ]
+  }
+}
